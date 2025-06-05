@@ -70,10 +70,6 @@ function UserPhotos() {
     // console.log(photoId + " " + commentText);
   };
 
-  const onLikeClick = async () => {
-    const token = localStorage.getItem("authToken");
-  };
-
   return (
     <div>
       <Grid container spacing={2}>
@@ -132,14 +128,14 @@ function UserPhotos() {
                         <Typography variant="body2">
                           {comment.comment}
                         </Typography>
-                        <Button
+                        {/* <Button
                           fullWidth
                           variant="contained"
                           color="primary"
                           // onClick={onLikeClick(comment._id)}
                         >
                           Like
-                        </Button>
+                        </Button> */}
                       </Box>
                     </Box>
                   ))}

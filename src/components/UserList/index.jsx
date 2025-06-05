@@ -19,7 +19,6 @@ import fetchModel from "../../lib/fetchModelData";
  */
 function UserList() {
   // const users = models.userListModel();
-  const [selectedFile, setSelectedFile] = useState();
 
   const [users, setUsers] = useState([]);
   const navigate = useNavigate();
@@ -34,7 +33,7 @@ function UserList() {
   }, []);
 
   const handleUpload = () => {
-    navigate("/upload")
+    navigate("/upload");
   };
   if (!users) {
     return <div>Loading user...</div>;
